@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ededed;
+    --blue-color: #00569f;
+    --orange-color: #f45101;
+    --white-color: #fff;
+    --speed: 7s;
+  }
+  body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  /*Navbar*/
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar li img {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+  
+  .navbar li:nth-child(3) {
+    background-color: var(--orange-color);
+    display: flex;
+    padding: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  }
+main {
+    min-height: 80vh;
+    padding: 1rem;
+}
+main button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color:#4F7FAC;
+    font-weight: 200;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+   font-family: 'Times New Roman', Times, serif;
+   opacity: 0.7;
+}
+br {
+    margin-bottom: 5rem;
+}
+
+.orange-text{
+    color: var(--orange-color);
+    margin: 1rem 0;
+  }
+  .subtitile {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #AAA9C7;
+  }
+  /*Footer*/
+footer {
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    color: var(--white-color);
+  }
+  footer img {
+    filter: brightness(0) invert(1);
+    z-index: 0;
+  }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 1rem;
+  }
+  footer p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }

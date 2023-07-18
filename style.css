@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ededed;
+  --blue-color: #00569f;
+  --orange-color: #f45101;
+  --white-color: #fff;
+  --speed: 7s;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navbar*/
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  gap: 2rem;
+  position: relative;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar li img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.navbar li:nth-child(3) {
+  background-color: var(--orange-color);
+  display: flex;
+  padding: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  border-radius: 50%;
+  width: 2.9rem;
+  height: 2.9rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+/*main section*/
+
+.heute-wichting {
+  background-color: var(--bg-color);
+  padding: 2rem 1rem 1.5rem 0.5rem;
+  -webkit-box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.75);
+}
+
+.heute-wichting img {
+  margin-bottom: 2rem;
+  height: 1.3rem;
+}
+
+.heute-wichting .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.heute-wichting .profile img {
+  height: 4rem;
+}
+
+.heute-wichting .profile .content {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.heute-wichting .profile button {
+  border: none;
+  display: block;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+.heute-wichting .profile button :hover {
+  cursor: pointer;
+}
+
+.heute-wichting .profile img:nth-child(2) {
+  width: 1.5rem;
+  height: 1.5rem;
+ 
+}
+
+.heute-wichting .news h3 {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  padding: 0.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.container:nth-child(even) {
+  background-color: white;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container button {
+ align-self: center;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  padding-top:1.2rem;
+
+  
+}
+
+.container button img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.news .forcast {
+  background-color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--white-color);
+   padding: 0.5rem;
+   border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
+}
+
+.news .forcast img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
+}
+.news .forcast div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.4rem;
+  
+}
+.news .forcast div p {
+  font-size: 1rem;
+  text-align: start;
+}
+.news .forcast  p {
+ font-size: 1.5rem;
+ font-weight: 600;
+}
+/*marketdetails*/
+.marktindikatoren {
+  padding: 2rem 1rem 0 0.5rem;
+
+}
+.marktindikatoren h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.marktindikatoren .top-news .container h2 {
+  color: var(--orange-color);
+  padding: 1.3rem 0 0 0;
+}
+.marktindikatoren .top-news .container button {
+ color: var(--orange-color);
+  padding: 0;
+  margin: 0;
+}
+.marktindikatoren .top-news .container button img {
+
+  cursor: pointer;
+}
+
+.marktindikatoren .top-news-content .title {
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  padding: 0.5rem;
+}
+.marktindikatoren .top-news-content .title h2 {
+  font-size: 1rem;
+}
+.marktindikatoren .top-news-content .title img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.title-container div:nth-child(2) {
+ background:var(--bg-color);
+}
+.newest-title-container div:nth-child(even){
+  background:var(--bg-color);
+}
+/*universal classes */
+.grey-bg {
+  background-color: var(--bg-color);
+}
+.orange-text{
+  color: var(--orange-color);
+}
+.blue-text{
+  color: var(--blue-color);
+}
+.p-text{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+.positive {
+  color: #008000;
+}
+
+.negative {
+  color: #ff0000;
+}
+.margin-top {
+  margin-top: 1rem;
+  color: #9D9D9C ;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.add button {
+  background-color: transparent;
+  border: none;
+  padding: 0.4rem;
+  border: 1px solid #9D9D9C;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.main-title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem;
+}
+.main-title button {
+  background-color: transparent;
+  border: none;
+  width: 1.2rem;
+  height: 1.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-title button img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.top-10 {
+  padding: 0.5rem;
+}
+.top-10 div{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+.top-10 p  {
+   background-color: var(--orange-color);
+    color: var(--white-color);
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+hr {
+  margin: 1rem 0;
+  border: 1px solid var(--bg-color);
+}
+
+.agraTV {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+}
+.agraTV img {
+  width: 50%;
+ margin-bottom: 1rem 0.5rem;
+}
+.agraTV p {
+  margin-top: 0.5rem;
+}
+.agraTV iframe {
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  width: 90vw;
+  height: 40vh;
+}
+
+.blue-ad {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.blue-ad div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.blue-ad div img {
+width: 50%;
+height: 50%;
+}
+.blue-ad img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0 0.5rem;
+
+}
+
+.diagram {
+  padding: 0.5rem;
+}
+
+.diagram img {
+  width: 100%;
+  height: 100%;
+}
+.marquee p {
+  background-color: var(--bg-color);
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+.marquee-content  span  {
+  margin: 0 0.5rem;
+}
+
+@keyframes marquee {
+  from { 
+	  transform: translateX(0%); 
+	}
+  to { 
+	  transform: translateX(-100%); 
+	}
+}
+
+.marquee {
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee calc(var(--speed) * (var(--width) / 500)) infinite linear both;
+}
+
+.marquee.paused .content {
+  animation-play-state: paused;
+}
+
+.icons {
+  position: relative;
+}
+.icons img:nth-child(1){
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 50%;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  color: var(--white-color);
+}
+footer img {
+  filter: brightness(0) invert(1);
+  z-index: 0;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+footer ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+/*classes for js functionalities */
+.rotated {
+  transform: rotate(180deg);
+}
+
+button img, #toggle {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .diagram {
+    text-align: center;
+  }
+ .diagram img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+ }
+ .top-10 {
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+ }
+ .agraTV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+  .agraTV iframe {
+    width: 48vw;
+    height: 50vh;
+  }
+  .agraTV img {
+    width: 30%;
+  } 
+  .blue-ad {
+   justify-content: center;
+   gap: 3rem;
+  }
+  section {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  .main-title button img{
+    width: 2rem;
+    height: 1.5rem;
+  }
+  #toggle-date, 
+  #toggle-date-newest,
+  #toggle {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  body {
+    font-size: 22px;
+  }
+
+}

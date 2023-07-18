@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Agra Choice</title>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <ul>
+        <li>
+          <img src="./images/grid-1@1x.png" alt="menu-icon" loading="lazy" />
+        </li>
+        <li>
+          <img
+            src="./images/person-1@1x.png"
+            alt="profile-icon"
+            loading="lazy"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/search-solid-1@1x.png"
+            alt="search-icon"
+            class="search"
+            loading="lazy"
+          />
+        </li>
+        <li class="">
+          <img src="./images/output-onlinepngtools(1).png" alt="more-icons" loading="lazy"/>
+        </li>
+        <li >
+          <img
+            src="./images/settings.png"
+            alt="settings-icon"
+            loading="lazy"
+          />
+          
+        </li>
+       
+      </ul>
+    </header>
+    <!-- main section -->
+    <section class="heute-wichting">
+      <img src="./images/logo.png" class="logo" alt="logo" />
+      <div class="profile">
+        <div class="content">
+          <img
+            src="./images/_profilbild.png"
+            alt="profile-bild"
+            loading="lazy"
+          />
+          <div class="text">
+            <h2>Guten Tag</h2>
+            <h2>Bernd Homann!</h2>
+          </div>
+        </div>
+        <img
+          src="./images/arrow-down-circle-1x-png@1x.png"
+          alt="arrow"
+          id="toggle"
+        />
+      </div>
+      <div class="news">
+        <h3>Das wird heute wichtig:</h3>
+        <div class="container">
+          <div class="content">
+            <p class="blue-text">Tierhaltungskennzeichnungsgesetz</p>
+            <h4 class="p-text">Tierschützer laufen Sturm</h4>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="content">
+            <p class="blue-text">Biodiverstitätsstrategie Bund</p>
+            <h4 class="p-text">Lemke bittet um Kommentare</h4>
+          </div>
+          <button onclick="openLink('./article.html')" >
+            <img src="./images/arrow-right-short@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="content">
+            <p class="blue-text">Markt</p>
+            <h4 class="p-text">Erzeugerpreise brechen ein</h4>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="content">
+            <p class="blue-text">NRW und Baden-Württemberg</p>
+            <h4 class="p-text">Strukturbruch bei Ferkelerzeugung</h4>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="forcast">
+          <img src="./images/weather.png" alt="weather" />
+          <div>
+            <p>18-23°C</p>
+            <p>0-23mm Regen</p>
+          </div>
+          <p>
+            Optimales <br />
+            Erntewetter
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="marktindikatoren">
+      <div>
+        <h2 class="blue-text">Marktindikatoren</h2>
+        <div class="marquee">
+          <div class="marquee-content">
+            <p>TECT <span>+1,45% </span> 12.3456</p>
+            <p>DAX <span>-1,45%</span> 12.4321</p>
+            <p>EDX <span>+1,45%</span> 53.3234</p>
+            <p>ALX <span>-1,45%</span> 97.4567</p>
+            <p>LKX <span>+1,45%</span> 87.7634</p>
+            <p>EDX <span>+1,45%</span> 53.3234</p>
+            <p>ALX <span>-1,45% </span> 97.4567</p>
+            <p>LKX <span>+1,45%</span> 87.7634</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <section class="top-news">
+        <div class="container">
+          <h2>Ihre Top-News, Herr Homann</h2>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="top-news-content">
+          <div class="title">
+            <h3>16.Juni 2023</h3>
+            <img
+              src="./images/arrow-down-circle-4@1x.png"
+              alt="arrow"
+              id="toggle-date-newest"
+            />
+          </div>
+          <div class="newest-title-container">
+            <div class="container">
+              <div class="text">
+                <p class="orange-text">Gentechnik, CRISPR/Cas</p>
+                <h3 class="p-text">Ampel will Gentechnikforschung</h3>
+              </div>
+              <button onclick="openLink('./article.html')">
+                <img
+                  src="./images/arrow-right-short-15@1x.png"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
+            <div class="container grey-bg">
+              <div class="text">
+                <p class="orange-text">Naturwiederherstellungsgesetz</p>
+                <h3 class="p-text">Hängepartie im EU-Parlament</h3>
+              </div>
+              <button onclick="openLink('./article.html')">
+                <img
+                  src="./images/arrow-right-short-15@1x.png"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
+            <div class="container">
+              <div class="text">
+                <p class="orange-text">Deutsche Wirtschaft</p>
+                <h3 class="p-text">Claas-Mühlhäuser sitzt Ost-Ausschuss vor</h3>
+              </div>
+              <button onclick="openLink('./article.html')">
+                <img
+                  src="./images/arrow-right-short-15@1x.png"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
+            <div class="container" style="background-color: #ededed">
+              <div class="text">
+                <p class="orange-text">Genossenschaften und Wirtschaft</p>
+                <h3 class="p-text">
+                  RWZ-Feldtag zu regenerativer Landwirtschaft
+                </h3>
+              </div>
+              <button onclick="openLink('./article.html')">
+                <img
+                  src="./images/arrow-right-short-15@1x.png"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="top-news-content">
+          <div class="title">
+            <h3>15.Juni 2023</h3>
+            <img
+              src="./images/arrow-down-circle-4@1x.png"
+              alt="arrow"
+              id="toggle-date"
+            />
+          </div>
+        </div>
+        <div class="title-container">
+          <div class="container">
+            <div class="text">
+              <p class="orange-text">NRW und Baden-Württemberg</p>
+              <h3 class="p-text">Strukturbruch bei Ferkelerzeugung</h3>
+            </div>
+            <button onclick="openLink('./article.html')">
+              <img
+                src="./images/arrow-right-short-15@1x.png"
+                alt="arrow-right"
+              />
+            </button>
+          </div>
+          <div class="container">
+            <div class="text">
+              <p class="orange-text">Deutscher Raiffeisenverband, Bund</p>
+              <h3 class="p-text">Tierwohl: Holzenkamp kontra Ampel</h3>
+            </div>
+            <button>
+              <img
+                src="./images/arrow-right-short-15@1x.png"
+                alt="arrow-right"
+              />
+            </button>
+          </div>
+          <div class="container">
+            <div class="text">
+              <p class="orange-text">Genossenschaften</p>
+              <h3 class="p-text">Westfleisch steigert Marktanteil</h3>
+            </div>
+            <button onclick="openLink('./article.html')">
+              <img
+                src="./images/arrow-right-short-15@1x.png"
+                alt="arrow-right"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="add">
+          <button><img src="./images/pfad-6-1@1x.png" alt="plus-icon"></button>
+        </div>
+      </section>
+      <hr />
+      <section class="blue-ad">
+        <div>
+          <img src="./images/agrachoice-logo-10@1x.png" alt="logo" />
+          <h2>Aktuelle Augsabe jetzt lesen!</h2>
+        </div>
+        <img src="./images/tap-1@1x.png" alt="tap-icon" />
+      </section>
+      <hr />
+      <section>
+        <div class="main-title">
+          <h3 class="orange-text">Agrar Genossenschaft Raiffeisen</h3>
+          <button onclick="openLink('./article.html')">
+            <img src="images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="text">
+            <p class="orange-text">Gentechnik, CRISPR/Cas</p>
+            <h3 class="p-text">Ampel will Gentechnikforschung</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container grey-bg">
+          <div class="text">
+            <p class="orange-text">NRW und Baden-Württemberg</p>
+            <h3 class="p-text">Strukturbruch bei Ferkelerzeugung</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="text">
+            <p class="orange-text">Genossenschaften</p>
+            <h3 class="p-text">Westfleisch steigert Marktanteil</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container grey-bg">
+          <div class="text">
+            <p class="orange-text">Podcast von Dachgenossenschaft</p>
+            <h3 class="p-text">Agravis gibt Tipps zum 2. Schnitt</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="add">
+          <button><img src="./images/pfad-6-1@1x.png" alt="plus-icon"></button>
+          <p class="margin-top">Dies ist eine gespeicherte Suche</p>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <div class="main-title">
+          <h3 class="orange-text">Agrar Handel Politik</h3>
+          <button onclick="openLink('./article.html')">
+            <img src="images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="text">
+            <p class="orange-text">Gentechnik, CRISPR/Cas</p>
+            <h3 class="p-text">Ampel will Gentechnikforschung</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container grey-bg">
+          <div class="text">
+            <p class="orange-text">Deutsche Wirtschaft</p>
+            <h3 class="p-text">Claas-Mühlhäuser sitzt Ost-Ausschuss vor</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container">
+          <div class="text">
+            <p class="orange-text">Naturwiederherstellungsgesetz</p>
+            <h3 class="p-text">Hängepartie im EU-Parlament</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="container grey-bg">
+          <div class="text">
+            <p class="orange-text">Markt</p>
+            <h3 class="p-text">Erzeugerpreise brechen ein</h3>
+          </div>
+          <button onclick="openLink('./article.html')">
+            <img src="./images/arrow-right-short-15@1x.png" alt="arrow-right" />
+          </button>
+        </div>
+        <div class="add">
+          <button><img src="./images/pfad-6-1@1x.png" alt="plus-icon"></button>
+          <p class="margin-top">Dies ist eine gespeicherte Suche</p>
+        </div>
+      </section>
+      <hr />
+      <section class="agraTV">
+        <img src="./images/agrachoice-logo-10@1x.png" alt="white-logo" />
+        <p>
+          Wirtschaftsminister Habeck zeigt sich offen für strengere
+          Compliance-Regeln
+        </p>
+        <iframe
+          style="border: 0; pointer-events: auto"
+          id="ytplayer"
+          type="text/html"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/2nD3SVyHYhc"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        ></iframe>
+      </section>
+      <section class="diagram">
+        <h2 class="orange-text">Erzeugerpreisindizes</h2>
+        <p class="orange-text">
+          2015 = 100, Veränderung gegenüber dem Vorjahresmonat, in %
+        </p>
+        <img src="./images/ep.png" alt="Erzeugerpreisindizes" />
+      </section>
+      <hr />
+      <section class="top-10">
+        <h2 class="orange-text">TOP-10 Schlagworte</h2>
+        <div>
+          <p>Ukraine</p>
+          <p>Schweinepreis</p>
+          <p>NutriScore</p>
+          <p>Zuckerrüben</p>
+          <p>EEW-Novelle</p>
+          <p>Inflation</p>
+          <p>Bio</p>
+          <p>Milchgeld</p>
+          <p>Soja</p>
+          <p>Weizen</p>
+        </div>
+      </section>
+      <hr />
+    </section>
+
+    <footer>
+      <img src="./images/logo.png" alt="logo" />
+      <ul>
+        <li><a href="">Impressum</a></li>
+        <li><a href="">Datenschutz</a></li>
+        <li><a href="">Kontakt</a></li>
+      </ul>
+      <p>
+        &copy;2023 Agra Europe Presse- und Informationsdienst GmbH, Berlin/Bonn
+      </p>
+    </footer>
+  </body>
+</html>
